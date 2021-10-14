@@ -180,10 +180,10 @@ main .muted::before{
     background-color: limegreen;
 } */
 
-.debug .box{
+/* .debug .box{
     background-color: grey;
     border: 1px solid black;
-}
+} */
 
 /* .debug .setting-bar{
     background-color: pink;
