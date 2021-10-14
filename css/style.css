@@ -7,5 +7,134 @@
 body{
     font-family: 'Roboto', Arial;
     background-color: black;
+    color: white;
 }
 
+.container{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+}
+
+/* top buttons  */
+.room-top{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+}
+
+.button-top{
+    background: linear-gradient(#3d3d3d, #1f1f1f); 
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.button-top span{
+    margin-left: 5px;
+}
+
+.button-top i{
+    padding: 0px 5px;
+}
+
+.button-top:hover{
+    background: linear-gradient(#4d4d4d, #353535); 
+}
+
+/* main section  */
+.room-user{
+    display: flex;
+    height: calc(100vh - 110px);
+}
+
+main .side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    /* min-width: none; */
+    height: 100%
+}
+
+main .side i{
+    font-size: 50px;
+    cursor: pointer;
+    padding: 10px;
+    color: #7f7f7f;
+}
+
+main .side i:hover{
+    color: #2ebaff;
+}
+
+/* central section  */
+main .users{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+}
+
+main .box{
+    width: 240px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+
+main .name{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3px 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+main .box i{
+    margin-right: 5px;
+}
+
+main .muted::before{
+    content: "\00007C";
+    font-size: 22px;
+    color: red;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+    transform: rotate(30deg);
+}
+
+/* settings-bar */
+.setting-bar{
+    height: 55px;
+    width: 100%;
+}
+
+
+/* *** debug *** */
+
+/* .debug .side{
+    background-color: tomato;
+} */
+
+/* .debug .users{
+    background-color: limegreen;
+} */
+
+.debug .box{
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.debug .setting-bar{
+    background-color: pink;
+}
