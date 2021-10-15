@@ -163,6 +163,7 @@ main .muted::before{
     background-color: #4a4b4d;
     color: #eb534b;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .setting-bar .right-bar:hover{
